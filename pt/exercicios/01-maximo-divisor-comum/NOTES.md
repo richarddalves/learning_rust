@@ -56,7 +56,7 @@ fn primos_ate(n: u32) -> Vec<u32>
 
 Para decompor um número em fatores primos, utiliza-se apenas números primos para a fatoração.
 
-Por exemplo, no exemplo acima para fatorar 12:
+Por exemplo, no exemplo abaixo para fatorar 12:
 
 ```
 12 | 2
@@ -73,7 +73,7 @@ Então, pensei que fosse ser importante ter uma lista de todos os números primo
 
 > Obs.: Logo descobri que não era, e que na verdade, é uma solução bem ruim porque a função tem complexidade $O(n * \sqrt{n})$.
 
-#### 3) Para gerar a lista de números primos até n:
+#### 3) Para gerar a lista dos fatores primos de `n`:
 
 ```rust
 fn decompor_em_fatores_primos(mut num: u32) -> Vec<u32>
@@ -115,6 +115,6 @@ O mais marcante foi usar `2..n` ao invés de `2..=n` em `primos_ate()`, que fazi
 
 ### Conclusão
 
-Por fim, acabei aprendendo algumas coisas valiosas. Tentei ir documentando o código com `///` enquanto escrevia, abstrair a lógica para funções por funcionalidades diferentes para deixar o código mais limpo, "auto documentado", e menos repetitivo, e também a deixar o meu código mais eficiente, quando parei para pensar sobre a complexidade dele em notação *Big O*.
+Por fim, acabei aprendendo algumas coisas valiosas. Aprendi e tentei ir documentando o código com `///` enquanto escrevia, abstraí a lógica para funções por funcionalidades diferentes para deixar o código mais limpo, "auto documentado", e menos repetitivo, e também a deixar o meu código mais eficiente, quando parei para pensar sobre a complexidade dele em notação *Big O*.
 
 As próprias experiências de estar escrevendo essa documentação e ir documentando o código enquanto escrevia também foram muito valiosas e sinto que estou evoluindo.
